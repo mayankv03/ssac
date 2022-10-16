@@ -1,0 +1,68 @@
+body {
+    background-color: #eee
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.mt-200 {
+    margin-top: 200px
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 1em;
+    transition: color 0.4s ease;
+    color: #b4b4aa;
+}
+
+.form-item--with-scaling-label label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    transform-origin: 0 0;
+    z-index: 1;
+    padding: 17px 20px;
+    transition: transform 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.form-item__label {
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #b4b4aa;
+    padding: 10px 10px 10px 0;
+}
+
+.form-text, .form-email, .form-password, .form-number, .form-select, .form-tel, .form-date, textarea {
+    padding: 15px;
+    border: 1px solid #d2d2c8;
+    background-color: #fff;
+    border-radius: 3px;
+    background-clip: padding-box;
+    width: 100%;
+    transition: 0.1s all linear;
+}
+
+.form-item--with-scaling-label input, .form-item--with-scaling-label textarea {
+    padding: 21px 20px 10px 20px;
+}
+
+.form-item--with-scaling-label.form-item--input-filled label {
+    transform: translate3d(5px,-5px,0) scale3d(0.7,0.7,1);
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAC Registration form</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+<body>
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+    
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-200"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Join us now </button> </div> <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">SSAC Registration Form</h2> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="mt-6">
+                                <form action="">
+                                <div id="step-1">
+                                    <H3>Personal Info</H3>
+                                    <div class="row">
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">&nbsp;First name</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="form-field-id" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">&nbsp;Last name</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="form-field-id" name="form-field-name" value="" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">&nbsp;Email</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="form-field-id" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">&nbsp;Mobile no.</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="form-field-id" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-12 js-form-item">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">&nbsp;&nbsp;Gender</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                                              </div>
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                                              </div>
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Prefer not to say</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Are you localite?</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Rzip" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Do you live in University Hostel?</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Rzip" name="form-field-name" value="" required>
+                                        </div>
+                                    </div>
+                                    <H3>Residential Address</H3>
+                                    <div class="row">
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Street Address</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Radd" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">City</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Rcit" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">State</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Rsta" name="form-field-name" value="" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Zip</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Rzip" name="form-field-name" value="" required>
+                                        </div>
+                                    </div>
+                                    <H3>Permanent Address</H3>
+                                    <input type="checkbox" id="filladdress" name="filladdress"/>
+                                    <label>Same as <strong>Residential Address?</strong></label>
+                                    <div class="row">
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Street Address</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Padd" name="form-field-name" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">City</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Pcit" name="form-field-name" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">State</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Psta" name="form-field-name" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Zip</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Pzip" name="form-field-name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <H3>University Info</H3>
+                                <div id="step-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <select  class="form-control">
+                                                <option>School of Advanced Computing</option>
+                                                <option>School of Agriculture</option>
+                                                <option>School of Arts, Humanities and Social Science</option>
+                                                <option>School of Commerce</option>
+                                                <option>School of Computer Application</option>
+                                                <option>School of Design</option>
+                                                <option>School of Engineering and Technology</option>
+                                                <option>School of Journalism and Mass Communication</option>
+                                                <option>School of Management</option>
+                                                <option>School of Performing Arts</option>
+                                                <option>School of Pharmacy</option>
+                                                <option>School of Science</option>
+                                                <option>School of Languages and Culture</option>
+                                                <option>School of Law & Legal Studies</option>
+
+                                            </select> 
+                                        </div>
+                                        <div class="clear"><br><br></div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Program</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Pzip" name="form-field-name" required>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Specialization</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Pzip" name="form-field-name" required>
+                                        </div>
+                                        <div class="col-md-6 form-item--with-scaling-label js-form-item form-item form-item-textfield">
+                                            <label for="form-field-label" class="form-item__label font-weight-bold">Scholar No.</label>
+                                            <input class="form-control form-text form-item__input" type="text" id="Pzip" name="form-field-name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><H3>Joining Info</H3>
+                                <div id="step-3" class="">
+                                    <div class="row form-check form-inline">
+                                        <div class="form-group"><p>For which post do you want to join us?&nbsp;&nbsp;</p></div>
+                                        <div class="form-group">
+                                            
+                                            <select  class="form-control">
+                                                <option disabled>President</option>
+                                                <option>Vice-President</option>
+                                                <option disabled>Secretary</option>
+                                                <option>Joint-Secretary</option>
+                                                <option>Treasurer</option>
+                                                <option disabled>Club Head</option>
+                                                <option>Event Head</option>
+                                                <option>Event Co-Head</option>
+                                                <option>Technical Head</option>
+                                                <option>Technical Co-Head</option>
+                                                <option>Branding Head</option>
+                                                <option>Branding Co-Head</option>
+                                                <option>Discipline Head</option>
+                                                <option>Discipline Co-Head</option>
+                                                <option>Cultural Head</option>
+                                                <option>Cinematographer Head</option>
+                                                <option>Videographer</option>
+                                                <option>Photographer</option>
+                                                <option>Film Making & Editor</option>
+                                                <option>Theater</option>
+                                                <option>Dance</option>
+                                                <option>Music</option>
+                                                <option>Content Writer</option>
+                                                <option>Member</option>
+                                            </select> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-4" class="">
+                                    <div class="row">
+                                        <div class="col-md-12"> <span><br>Thanks For submitting your details with SAGE Student Ambassadors Council. we will send you a confirmation email. We will review your details and revert back.</span> </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mb-2">Submit form</button>
+                                </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
